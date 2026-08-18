@@ -2,10 +2,18 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build') {
             steps {
-                echo 'Hello from Jenkins Pipeline!'
+                echo 'Building the application...'
             }
         }
+
+        stage('Test') {
+            steps {
+                echo 'Testing the application...'
+            }
+        }
+
     }
 }
