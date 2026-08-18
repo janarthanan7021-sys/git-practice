@@ -4,10 +4,11 @@ pipeline {
     stages {
 
         stage('Build') {
-            steps {
-                echo 'Building the application...'
-            }
-        }
+    steps {
+        sh 'pwd'
+        sh 'ls'
+    }
+}
 
         stage('Test') {
             steps {
